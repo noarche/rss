@@ -59,16 +59,16 @@ def update_rss_feeds(config, template_file):
         if feed:
             for entry in feed.entries:
                 if entry.link not in existing_html:
-                    feed_data.append({
+                    feed_data.insert(0, {  # Insert at the beginning
                         'title': entry.title,
                         'link': entry.link,
                         'published': entry.published,
                         'summary': getattr(entry, 'summary', '')  # Use default empty string if summary doesn't exist
                     })
 
-        # Generate new HTML content and append it
+        # Generate new HTML content and prepend it to the existing content
         new_html_content = generate_html(feed_data, template_file)
-        combined_html_content = existing_html + new_html_content
+        combined_html_content = new_html_content + existing_html
 
         with open(rss_file_path, 'w', encoding='utf-8') as file:
             file.write(combined_html_content)
