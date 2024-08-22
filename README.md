@@ -15,7 +15,8 @@ Whether you're working late at night and need a dark, easy-on-the-eyes view, or 
 
 
 
-![rss_github_noarche_rss](https://github.com/user-attachments/assets/db60be31-41cf-43e2-9e3e-8970543ba9db)
+![rss_github_noarche_rss](https://github.com/user-attachments/assets/35e93a08-6392-482d-bbfd-b83dec54a7cc)
+
 
 
 
