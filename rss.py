@@ -7,6 +7,7 @@ import argparse
 from jinja2 import Environment, FileSystemLoader
 from datetime import datetime
 from colorama import Fore, Style
+from dateutil import parser as date_parser  # Import dateutil.parser
 
 # Paths
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -59,12 +60,17 @@ def update_rss_feeds(config, template_file):
         if feed:
             for entry in feed.entries:
                 if entry.link not in existing_html:
-                    feed_data.insert(0, {  # Insert at the beginning
+                    # Use dateutil.parser to parse the date
+                    published_date = date_parser.parse(entry.published)
+                    feed_data.append({
                         'title': entry.title,
                         'link': entry.link,
-                        'published': entry.published,
+                        'published': published_date,
                         'summary': getattr(entry, 'summary', '')  # Use default empty string if summary doesn't exist
                     })
+
+            # Sort the feed data by published date in descending order (most recent first)
+            feed_data.sort(key=lambda x: x['published'], reverse=True)
 
         # Generate new HTML content and prepend it to the existing content
         new_html_content = generate_html(feed_data, template_file)
@@ -111,4 +117,3 @@ if __name__ == "__main__":
             time.sleep(3600)  # Restart script after sleeping for 1 hour
     except KeyboardInterrupt:
         print(Fore.YELLOW + "Script terminated by user." + Style.RESET_ALL)
-
