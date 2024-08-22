@@ -58,26 +58,6 @@
             "url": "https://feeds.content.dowjones.io/public/rss/mw_realtimeheadlines"
         },
         {
-            "title": "Google News Buiness",
-            "url": "https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx6TVdZU0FtVnVHZ0pWVXlnQVAB?hl=en-US&gl=US&ceid=US%3Aen"
-        },
-        {
-            "title": "Google News Tech",
-            "url": "https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGRqTVhZU0FtVnVHZ0pWVXlnQVAB?hl=en-US&gl=US&ceid=US%3Aen"
-        },
-        {
-            "title": "Google News Science",
-            "url": "https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRFp0Y1RjU0FtVnVHZ0pWVXlnQVAB?hl=en-US&gl=US&ceid=US%3Aen"
-        },
-        {
-            "title": "Google News World",
-            "url": "https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx1YlY4U0FtVnVHZ0pWVXlnQVAB?hl=en-US&gl=US&ceid=US%3Aen"
-        },
-        {
-            "title": "Google News USA",
-            "url": "https://news.google.com/topics/CAAqIggKIhxDQkFTRHdvSkwyMHZNRGxqTjNjd0VnSmxiaWdBUAE?hl=en-US&gl=US&ceid=US%3Aen"
-        },
-        {
             "title": "The Weather Channel",
             "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCGTUbwceCMibvpbd2NaIP7A"
         },
