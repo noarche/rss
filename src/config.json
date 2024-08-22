@@ -1,8 +1,17 @@
 {
+    "update_interval": 3600,
     "rss_links": [
-        "https://example.com/url/rss",
-        "https://example2.com/url/rss/comma",
-        "https://example3.com/url/rss/no-comma"
-    ],
-    "update_interval": 3600
+        {
+            "title": "The Verge",
+            "url": "https://theverge.com/rss/index.xml"
+        },
+        {
+            "title": "Security Week",
+            "url": "https://www.securityweek.com/feed"
+        },
+        {
+            "title": "Hacker News",
+            "url": "https://hnrss.org/frontpage"
+        }
+    ]
 }
