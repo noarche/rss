@@ -19,7 +19,10 @@ Whether you're working late at night and need a dark, easy-on-the-eyes view, or 
 
 
 
+# Updates
 
+    Added index.html to pages generated first time running script. Bookmark/send to desktop shortcut this link. It is the index to all of your feeds. 
+    Feeds now have their own pages.
 
 ## 🌐 Config Settings & DARK THEME
 
