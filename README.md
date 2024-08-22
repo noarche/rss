@@ -5,7 +5,7 @@
 
 Simple yet powerful RSS reader, Complete with a dark theme!
 
-rss_feed.html is updated with new articles, if you want to delete the entries/history you need to delete the page called rss_feed.html and start fresh with only whats published by running RSS-DARK or RSS-LIGHT. 
+After the first run look for a file named index.html and open it. This is the 'table of contents'.
 
 Imagine having a beautiful, custom webpage that keeps you updated with the latest news and stories from your favorite websites. With our tool, you can choose between a sleek, modern dark theme or a clean, light theme to match your style.
 
