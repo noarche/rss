@@ -12,6 +12,54 @@
         {
             "title": "Hacker News",
             "url": "https://hnrss.org/frontpage"
+        },
+        {
+            "title": "Fox News",
+            "url": "http://feeds.foxnews.com/foxnews/latest"
+        },
+        {
+            "title": "Washington Post World News",
+            "url": "http://feeds.washingtonpost.com/rss/world"
+        },
+        {
+            "title": "HuffPost Breaking World News",
+            "url": "https://www.huffpost.com/section/world-news/feed"
+        },
+        {
+            "title": "Yahoo Headlines",
+            "url": "https://news.yahoo.com/rss/mostviewed"
+        },
+        {
+            "title": "Washington Post World News",
+            "url": "http://feeds.washingtonpost.com/rss/world"
+        },
+        {
+            "title": "WallSt Journal World News",
+            "url": "https://feeds.a.dj.com/rss/RSSWorldNews.xml"
+        },
+        {
+            "title": "CNBC News",
+            "url": "https://www.cnbc.com/id/100003114/device/rss/rss.html"
+        },
+        {
+            "title": "LA Times World & Nation",
+            "url": "https://www.latimes.com/world-nation/rss2.0.xml"
+        },
+        {
+            "title": "Financial Times",
+            "url": "https://www.ft.com/rss/home"
+        },
+        {
+            "title": "Market Watch Top Stories",
+            "url": "https://feeds.content.dowjones.io/public/rss/mw_topstories"
+        },
+        {
+            "title": "Market Watch Real-Time",
+            "url": "https://feeds.content.dowjones.io/public/rss/mw_realtimeheadlines"
+        },
+        {
+            "title": "Financial Post",
+            "url": "http://business.financialpost.com/feed"
         }
     ]
 }
