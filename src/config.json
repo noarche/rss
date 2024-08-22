@@ -14,12 +14,40 @@
             "url": "http://news.google.com/news?hl=en&gl=us&q=aljazeera&um=1&ie=UTF-8&output=rss"
         },
         {
-            "title": "cNet",
-            "url": "http://news.cnet.com/2547-1_3-0-20.xml"
+            "title": "Astrophysics Nature.com",
+            "url": "http://www.nature.com/subjects/astronomy-and-astrophysics.rss"
+        },
+        {
+            "title": "Astrophysics Science Daily",
+            "url": "http://www.sciencedaily.com/rss/space_time/astrophysics.xml"
+        },
+        {
+            "title": "Autoblog",
+            "url": "http://www.autoblog.com/rss.xml"
+        },
+        {
+            "title": "Bloomberg Politics",
+            "url": "http://www.bloomberg.com/politics/feeds/site.xml"
+        },
+        {
+            "title": "Car & Driver",
+            "url": "https://www.caranddriver.com/rss/all.xml/"
+        },
+        {
+            "title": "Chemistry World",
+            "url": "https://www.chemistryworld.com/413.rss"
         },
         {
             "title": "CNBC News",
             "url": "https://www.cnbc.com/id/100003114/device/rss/rss.html"
+        },
+        {
+            "title": "cNet",
+            "url": "http://news.cnet.com/2547-1_3-0-20.xml"
+        },
+        {
+            "title": "Coindesk",
+            "url": "http://feeds.feedburner.com/CoinDesk"
         },
         {
             "title": "Financial Post",
@@ -34,12 +62,16 @@
             "url": "http://feeds.foxnews.com/foxnews/latest"
         },
         {
-            "title": "Hackernoon",
-            "url": "https://hackernoon.com/feed"
+            "title": "Github Blog",
+            "url": "https://github.com/blog/all.atom"
         },
         {
             "title": "Hacker News",
             "url": "https://hnrss.org/frontpage"
+        },
+        {
+            "title": "Hackernoon",
+            "url": "https://hackernoon.com/feed"
         },
         {
             "title": "HuffPost Breaking World News",
@@ -48,6 +80,10 @@
         {
             "title": "LA Times World & Nation",
             "url": "https://www.latimes.com/world-nation/rss2.0.xml"
+        },
+        {
+            "title": "Life Hacker",
+            "url": "https://lifehacker.com/rss"
         },
         {
             "title": "Linux Security",
@@ -64,6 +100,18 @@
         {
             "title": "MSNBC",
             "url": "http://news.google.com/news?hl=en&gl=us&q=msnbc&um=1&ie=UTF-8&output=rss"
+        },
+        {
+            "title": "Nasa Img of the Day",
+            "url": "http://www.nasa.gov/rss/image_of_the_day.rss"
+        },
+        {
+            "title": "NewsBTC",
+            "url": "http://newsbtc.com/feed/"
+        },
+        {
+            "title": "Popular Mechanics",
+            "url": "http://www.popularmechanics.com/rss/"
         },
         {
             "title": "Security Week",
