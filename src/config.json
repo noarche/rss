@@ -2,60 +2,92 @@
     "update_interval": 3600,
     "rss_links": [
         {
-            "title": "The Verge",
-            "url": "https://theverge.com/rss/index.xml"
+            "title": "ABC News Top Stories",
+            "url": "http://feeds.abcnews.com/abcnews/topstories"
         },
         {
-            "title": "Security Week",
-            "url": "https://www.securityweek.com/feed"
+            "title": "ABC News USA",
+            "url": "http://feeds.abcnews.com/abcnews/usheadlines"
         },
         {
-            "title": "Hacker News",
-            "url": "https://hnrss.org/frontpage"
+            "title": "Al Jazeera English",
+            "url": "http://news.google.com/news?hl=en&gl=us&q=aljazeera&um=1&ie=UTF-8&output=rss"
         },
         {
-            "title": "Fox News",
-            "url": "http://feeds.foxnews.com/foxnews/latest"
-        },
-        {
-            "title": "Washington Post World News",
-            "url": "http://feeds.washingtonpost.com/rss/world"
-        },
-        {
-            "title": "HuffPost Breaking World News",
-            "url": "https://www.huffpost.com/section/world-news/feed"
-        },
-        {
-            "title": "Yahoo Headlines",
-            "url": "https://news.yahoo.com/rss/mostviewed"
-        },
-        {
-            "title": "Washington Post World News",
-            "url": "http://feeds.washingtonpost.com/rss/world"
-        },
-        {
-            "title": "WallSt Journal World News",
-            "url": "https://feeds.a.dj.com/rss/RSSWorldNews.xml"
+            "title": "cNet",
+            "url": "http://news.cnet.com/2547-1_3-0-20.xml"
         },
         {
             "title": "CNBC News",
             "url": "https://www.cnbc.com/id/100003114/device/rss/rss.html"
         },
         {
-            "title": "LA Times World & Nation",
-            "url": "https://www.latimes.com/world-nation/rss2.0.xml"
+            "title": "Financial Post",
+            "url": "http://business.financialpost.com/feed"
         },
         {
             "title": "Financial Times",
             "url": "https://www.ft.com/rss/home"
         },
         {
-            "title": "Market Watch Top Stories",
-            "url": "https://feeds.content.dowjones.io/public/rss/mw_topstories"
+            "title": "Fox News",
+            "url": "http://feeds.foxnews.com/foxnews/latest"
+        },
+        {
+            "title": "Hackernoon",
+            "url": "https://hackernoon.com/feed"
+        },
+        {
+            "title": "Hacker News",
+            "url": "https://hnrss.org/frontpage"
+        },
+        {
+            "title": "HuffPost Breaking World News",
+            "url": "https://www.huffpost.com/section/world-news/feed"
+        },
+        {
+            "title": "LA Times World & Nation",
+            "url": "https://www.latimes.com/world-nation/rss2.0.xml"
+        },
+        {
+            "title": "Linux Security",
+            "url": "http://www.linuxsecurity.com/static-content/linuxsecurity_advisories.rss"
         },
         {
             "title": "Market Watch Real-Time",
             "url": "https://feeds.content.dowjones.io/public/rss/mw_realtimeheadlines"
+        },
+        {
+            "title": "Market Watch Top Stories",
+            "url": "https://feeds.content.dowjones.io/public/rss/mw_topstories"
+        },
+        {
+            "title": "MSNBC",
+            "url": "http://news.google.com/news?hl=en&gl=us&q=msnbc&um=1&ie=UTF-8&output=rss"
+        },
+        {
+            "title": "Security Week",
+            "url": "https://www.securityweek.com/feed"
+        },
+        {
+            "title": "Seeking Alpha",
+            "url": "http://seekingalpha.com/tag/market-outlook.xml"
+        },
+        {
+            "title": "The Guardian World News",
+            "url": "http://feeds.guardian.co.uk/theguardian/world/rss"
+        },
+        {
+            "title": "The Hacker News",
+            "url": "http://thehackernews.com/feeds/posts/default"
+        },
+        {
+            "title": "The Register",
+            "url": "http://www.theregister.co.uk/security/headlines.atom"
+        },
+        {
+            "title": "The Verge",
+            "url": "https://theverge.com/rss/index.xml"
         },
         {
             "title": "The Weather Channel",
@@ -65,53 +97,17 @@
             "title": "Trending Google Search",
             "url": "http://www.google.com/trends/hottrends/atom/feed?pn=p1"
         },
-                {
-            "title": "The Guardian World News",
-            "url": "http://feeds.guardian.co.uk/theguardian/world/rss"
+        {
+            "title": "WallSt Journal World News",
+            "url": "https://feeds.a.dj.com/rss/RSSWorldNews.xml"
         },
         {
-            "title": "The Register",
-            "url": "http://www.theregister.co.uk/security/headlines.atom"
+            "title": "Washington Post World News",
+            "url": "http://feeds.washingtonpost.com/rss/world"
         },
         {
-            "title": "Linux Security",
-            "url": "http://www.linuxsecurity.com/static-content/linuxsecurity_advisories.rss"
-        },
-        {
-            "title": "Al Jazeera English",
-            "url": "http://news.google.com/news?hl=en&gl=us&q=aljazeera&um=1&ie=UTF-8&output=rss"
-        },
-        {
-            "title": "ABC News Top Stories",
-            "url": "http://feeds.abcnews.com/abcnews/topstories"
-        },
-        {
-            "title": "ABC News USA",
-            "url": "http://feeds.abcnews.com/abcnews/usheadlines"
-        },
-        {
-            "title": "MSNBC",
-            "url": "http://news.google.com/news?hl=en&gl=us&q=msnbc&um=1&ie=UTF-8&output=rss"
-        },
-        {
-            "title": "Seeking Alpha",
-            "url": "http://seekingalpha.com/tag/market-outlook.xml"
-        },
-        {
-            "title": "cNet",
-            "url": "http://news.cnet.com/2547-1_3-0-20.xml"
-        },
-        {
-            "title": "The Hacker News",
-            "url": "http://thehackernews.com/feeds/posts/default"
-        },
-        {
-            "title": "Hackernoon",
-            "url": "https://hackernoon.com/feed"
-        },
-        {
-            "title": "Financial Post",
-            "url": "http://business.financialpost.com/feed"
+            "title": "Yahoo Headlines",
+            "url": "https://news.yahoo.com/rss/mostviewed"
         }
     ]
 }
