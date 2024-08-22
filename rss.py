@@ -7,7 +7,8 @@ import argparse
 from jinja2 import Environment, FileSystemLoader
 from datetime import datetime
 from colorama import Fore, Style
-from dateutil import parser as date_parser  # Import dateutil.parser
+from dateutil import parser as date_parser
+from dateutil.tz import gettz
 
 # Paths
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -15,6 +16,47 @@ CONFIG_FILE = os.path.join(BASE_DIR, 'src', 'config.json')
 INDEX_FILE = os.path.join(BASE_DIR, 'index.html')
 HOMEPAGE_TEMPLATE = os.path.join(BASE_DIR, 'src', 'template_homepage_dark.html')  # Dark theme by default
 UPDATE_INTERVAL = 3600  # Default to 1 hour if not specified in config
+
+TZINFOS = {
+    'GMT': gettz('GMT'),
+    'UTC': gettz('UTC'),
+    'EST': gettz('America/New_York'),
+    'EDT': gettz('America/New_York'),
+    'CST': gettz('America/Chicago'),
+    'CDT': gettz('America/Chicago'),
+    'MST': gettz('America/Denver'),
+    'MDT': gettz('America/Denver'),
+    'PST': gettz('America/Los_Angeles'),
+    'PDT': gettz('America/Los_Angeles'),
+    'HST': gettz('Pacific/Honolulu'),
+    'AKST': gettz('America/Anchorage'),
+    'AKDT': gettz('America/Anchorage'),
+    'AST': gettz('America/Halifax'),
+    'ADT': gettz('America/Halifax'),
+    'NST': gettz('America/St_Johns'),
+    'NDT': gettz('America/St_Johns'),
+    'BST': gettz('Europe/London'),
+    'CET': gettz('Europe/Paris'),
+    'CEST': gettz('Europe/Paris'),
+    'EET': gettz('Europe/Athens'),
+    'EEST': gettz('Europe/Athens'),
+    'IST': gettz('Asia/Kolkata'),
+    'PKT': gettz('Asia/Karachi'),
+    'WAT': gettz('Africa/Lagos'),
+    'WET': gettz('Europe/Lisbon'),
+    'WEST': gettz('Europe/Lisbon'),
+    'CST-Asia': gettz('Asia/Shanghai'),
+    'JST': gettz('Asia/Tokyo'),
+    'KST': gettz('Asia/Seoul'),
+    'AEST': gettz('Australia/Sydney'),
+    'AEDT': gettz('Australia/Sydney'),
+    'ACST': gettz('Australia/Adelaide'),
+    'ACDT': gettz('Australia/Adelaide'),
+    'AWST': gettz('Australia/Perth'),
+    'NZST': gettz('Pacific/Auckland'),
+    'NZDT': gettz('Pacific/Auckland'),
+}
+
 
 def load_config():
     with open(CONFIG_FILE, 'r') as file:
@@ -60,8 +102,8 @@ def update_rss_feeds(config, template_file):
         if feed:
             for entry in feed.entries:
                 if entry.link not in existing_html:
-                    # Use dateutil.parser to parse the date
-                    published_date = date_parser.parse(entry.published)
+                    # Use dateutil.parser to parse the date with tzinfos
+                    published_date = date_parser.parse(entry.published, tzinfos=TZINFOS)
                     feed_data.append({
                         'title': entry.title,
                         'link': entry.link,
