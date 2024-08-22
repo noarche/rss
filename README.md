@@ -22,10 +22,12 @@ Whether you're working late at night and need a dark, easy-on-the-eyes view, or 
 
 # Updates
 
- 1    Added index.html to pages generated first time running script. Bookmark/send to desktop shortcut this link. It is the index to all of your feeds. 
+1    Added index.html to pages generated first time running script. Bookmark/send to desktop shortcut this link. It is the index to all of your feeds. 
     Feeds now have their own pages.
 
-2    Changed the way feeds are sorted. Now the most recent post is at the top of the page. Added more RSS feeds.    
+2    Changed the way feeds are sorted. Now the most recent post is at the top of the page. 
+
+3    Added more RSS feeds.    
 
 ## 🌐 Config Settings & DARK THEME
 
