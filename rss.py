@@ -111,3 +111,4 @@ if __name__ == "__main__":
             time.sleep(3600)  # Restart script after sleeping for 1 hour
     except KeyboardInterrupt:
         print(Fore.YELLOW + "Script terminated by user." + Style.RESET_ALL)
+
