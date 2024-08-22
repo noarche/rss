@@ -58,6 +58,83 @@
             "url": "https://feeds.content.dowjones.io/public/rss/mw_realtimeheadlines"
         },
         {
+            "title": "Google News Buiness",
+            "url": "https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx6TVdZU0FtVnVHZ0pWVXlnQVAB?hl=en-US&gl=US&ceid=US%3Aen"
+        },
+        {
+            "title": "Google News Tech",
+            "url": "https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGRqTVhZU0FtVnVHZ0pWVXlnQVAB?hl=en-US&gl=US&ceid=US%3Aen"
+        },
+        {
+            "title": "Google News Science",
+            "url": "https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRFp0Y1RjU0FtVnVHZ0pWVXlnQVAB?hl=en-US&gl=US&ceid=US%3Aen"
+        },
+                {
+            "title": "Google News World",
+            "url": "https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx1YlY4U0FtVnVHZ0pWVXlnQVAB?hl=en-US&gl=US&ceid=US%3Aen"
+        },
+        {
+            "title": "Google News USA",
+            "url": "https://news.google.com/topics/CAAqIggKIhxDQkFTRHdvSkwyMHZNRGxqTjNjd0VnSmxiaWdBUAE?hl=en-US&gl=US&ceid=US%3Aen"
+        },
+        {
+            "title": "The Weather Channel",
+            "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCGTUbwceCMibvpbd2NaIP7A"
+        },
+        {
+            "title": "Trending Google Search",
+            "url": "http://www.google.com/trends/hottrends/atom/feed?pn=p1"
+        },
+                {
+            "title": "The Guardian World News",
+            "url": "http://feeds.guardian.co.uk/theguardian/world/rss"
+        },
+        {
+            "title": "The Register",
+            "url": "http://www.theregister.co.uk/security/headlines.atom"
+        },
+        {
+            "title": "Linux Security",
+            "url": "http://www.linuxsecurity.com/static-content/linuxsecurity_advisories.rss"
+        },
+        {
+            "title": "Al Jazeera English",
+            "url": "http://news.google.com/news?hl=en&gl=us&q=aljazeera&um=1&ie=UTF-8&output=rss"
+        },
+                {
+            "title": "ABC News Top Stories",
+            "url": "http://feeds.abcnews.com/abcnews/topstories"
+        },
+        {
+            "title": "ABC News USA",
+            "url": "http://feeds.abcnews.com/abcnews/usheadlines"
+        },
+        {
+            "title": "MSNBC",
+            "url": "http://news.google.com/news?hl=en&gl=us&q=msnbc&um=1&ie=UTF-8&output=rss"
+        },
+        {
+            "title": "Seeking Alpha",
+            "url": "http://seekingalpha.com/tag/market-outlook.xml"
+        },
+        {
+            "title": "cNet",
+            "url": "http://news.cnet.com/2547-1_3-0-20.xml"
+        },
+        {
+            "title": "The Hacker News",
+            "url": "http://thehackernews.com/feeds/posts/default"
+        },
+        {
+            "title": "Hackernoon",
+            "url": "https://hackernoon.com/feed"
+        },
+        {
+            "title": "r/darknet",
+            "url": "http://www.reddit.com/r/darknet/.rss"
+        },
+
+        {
             "title": "Financial Post",
             "url": "http://business.financialpost.com/feed"
         }
