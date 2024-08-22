@@ -5,7 +5,7 @@
 
 Simple yet powerful RSS reader, Complete with a dark theme!
 
-After the first run look for a file named index.html and open it. This is the 'table of contents'.
+After the first run look for a file named `index.html` and open it. This is the 'table of contents'.
 
 Imagine having a beautiful, custom webpage that keeps you updated with the latest news and stories from your favorite websites. With our tool, you can choose between a sleek, modern dark theme or a clean, light theme to match your style.
 
