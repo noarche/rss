@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSS Feed Updates</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            line-height: 1.6; 
+            margin: 20px; 
+        }
+        h1 { 
+            text-align: center; 
+        }
+        .feed-container { 
+            margin-bottom: 20px; 
+        }
+        .feed-entry { 
+            padding: 10px; 
+            border: 1px solid #ddd; 
+            border-radius: 5px; 
+            margin-bottom: 10px; 
+        }
+        .feed-entry h2 { 
+            margin: 0; 
+        }
+        .feed-entry p { 
+            margin: 0; 
+        }
+        .button-container { 
+            text-align: right; 
+        }
+        .visit-button { 
+            background-color: #007BFF; 
+            color: white; 
+            border: none; 
+            padding: 8px 12px; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            text-decoration: none; 
+        }
+        .visit-button:hover { 
+            background-color: #0056b3; 
+        }
+        .feed-entry img { 
+            max-width: 100%; 
+            height: auto; 
+            border-radius: 5px; 
+            margin-bottom: 10px; 
+        }
+    </style>
+</head>
+<body>
+    <h1>RSS Feed Updates</h1>
+    {% for feed in feeds %}
+    <div class="feed-container">
+        <div class="feed-entry">
+            {% if feed.image %}
+            <img src="{{ feed.image }}" alt="Feed image">
+            {% endif %}
+            <h2>{{ feed.title }}</h2>
+            <p><small>Published on: {{ feed.published }}</small></p>
+            <p>{{ feed.summary }}</p>
+            <div class="button-container">
+                <a href="{{ feed.link }}" target="_blank" class="visit-button">Visit Site</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</body>
+</html>

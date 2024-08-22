@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSS Feed Updates - Dark Theme</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .feed-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .feed {
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 20px;
+            background-color: #1e1e1e;
+        }
+        .feed h2 {
+            color: #bb86fc;
+            margin-top: 0;
+        }
+        .feed p {
+            color: #b0b0b0;
+        }
+        .feed a {
+            color: #03dac6;
+            text-decoration: none;
+        }
+        .feed a:hover {
+            text-decoration: underline;
+        }
+        .published-date {
+            font-size: 0.9em;
+            color: #a0a0a0;
+        }
+        .visit-site {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            color: #ffffff;
+            background-color: #6200ee;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .visit-site:hover {
+            background-color: #3700b3;
+        }
+        .feed img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="feed-container">
+        {% for feed in feeds %}
+        <div class="feed">
+            {% if feed.image %}
+            <img src="{{ feed.image }}" alt="Feed image">
+            {% endif %}
+            <h2>{{ feed.title }}</h2>
+            <p class="published-date">{{ feed.published }}</p>
+            <p>{{ feed.summary }}</p>
+            <a href="{{ feed.link }}" target="_blank" class="visit-site">Visit Site</a>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
