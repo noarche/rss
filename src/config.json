@@ -69,7 +69,7 @@
             "title": "Google News Science",
             "url": "https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRFp0Y1RjU0FtVnVHZ0pWVXlnQVAB?hl=en-US&gl=US&ceid=US%3Aen"
         },
-                {
+        {
             "title": "Google News World",
             "url": "https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx1YlY4U0FtVnVHZ0pWVXlnQVAB?hl=en-US&gl=US&ceid=US%3Aen"
         },
@@ -101,7 +101,7 @@
             "title": "Al Jazeera English",
             "url": "http://news.google.com/news?hl=en&gl=us&q=aljazeera&um=1&ie=UTF-8&output=rss"
         },
-                {
+        {
             "title": "ABC News Top Stories",
             "url": "http://feeds.abcnews.com/abcnews/topstories"
         },
@@ -133,7 +133,6 @@
             "title": "r/darknet",
             "url": "http://www.reddit.com/r/darknet/.rss"
         },
-
         {
             "title": "Financial Post",
             "url": "http://business.financialpost.com/feed"
