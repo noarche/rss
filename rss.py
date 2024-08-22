@@ -11,7 +11,7 @@ from colorama import Fore, Style
 # Paths
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 CONFIG_FILE = os.path.join(BASE_DIR, 'src', 'config.json')
-HOMEPAGE_FILE = os.path.join(BASE_DIR, 'index.html')
+INDEX_FILE = os.path.join(BASE_DIR, 'index.html')
 HOMEPAGE_TEMPLATE = os.path.join(BASE_DIR, 'src', 'template_homepage_dark.html')  # Dark theme by default
 UPDATE_INTERVAL = 3600  # Default to 1 hour if not specified in config
 
@@ -63,7 +63,7 @@ def update_rss_feeds(config, template_file):
                         'title': entry.title,
                         'link': entry.link,
                         'published': entry.published,
-                        'summary': entry.summary
+                        'summary': getattr(entry, 'summary', '')  # Use default empty string if summary doesn't exist
                     })
 
         # Generate new HTML content and append it
@@ -77,10 +77,10 @@ def update_rss_feeds(config, template_file):
 
     homepage_html = generate_homepage(homepage_content)
 
-    with open(HOMEPAGE_FILE, 'w', encoding='utf-8') as homepage_file:
+    with open(INDEX_FILE, 'w', encoding='utf-8') as homepage_file:
         homepage_file.write(homepage_html)
 
-    print(Fore.GREEN + f"{datetime.now()} - RSS feeds updated and homepage generated." + Style.RESET_ALL)
+    print(Fore.GREEN + f"{datetime.now()} - RSS feeds updated and index.html generated." + Style.RESET_ALL)
 
 def start_feed_updater(template_file):
     while True:
