@@ -11,7 +11,8 @@ from colorama import Fore, Style
 # Paths
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 CONFIG_FILE = os.path.join(BASE_DIR, 'src', 'config.json')
-HTML_FILE = os.path.join(BASE_DIR, 'rss_feed.html')
+HOMEPAGE_FILE = os.path.join(BASE_DIR, 'index.html')
+HOMEPAGE_TEMPLATE = os.path.join(BASE_DIR, 'src', 'template_homepage_dark.html')  # Dark theme by default
 UPDATE_INTERVAL = 3600  # Default to 1 hour if not specified in config
 
 def load_config():
@@ -31,18 +32,30 @@ def generate_html(feed_data, template_file):
     template = env.get_template(os.path.basename(template_file))
     return template.render(feeds=feed_data)
 
-def update_rss_feeds(config, template_file):
-    # Load existing content if it exists
-    if os.path.exists(HTML_FILE):
-        with open(HTML_FILE, 'r', encoding='utf-8') as file:
-            existing_html = file.read()
-    else:
-        existing_html = ""
+def generate_homepage(homepage_content):
+    env = Environment(loader=FileSystemLoader(os.path.join(BASE_DIR, 'src')))
+    template = env.get_template(os.path.basename(HOMEPAGE_TEMPLATE))
+    return template.render(homepage_content=homepage_content)
 
-    # Fetch new feed data
-    feed_data = []
-    for rss_link in config.get('rss_links', []):
-        feed = fetch_rss_feed(rss_link)
+def update_rss_feeds(config, template_file):
+    homepage_content = ""
+
+    for rss_info in config.get('rss_links', []):
+        rss_url = rss_info.get('url')
+        rss_title = rss_info.get('title', rss_url)
+        rss_filename = rss_title.replace(" ", "_").lower() + '.html'
+        rss_file_path = os.path.join(BASE_DIR, rss_filename)
+
+        # Load existing content if it exists
+        if os.path.exists(rss_file_path):
+            with open(rss_file_path, 'r', encoding='utf-8') as file:
+                existing_html = file.read()
+        else:
+            existing_html = ""
+
+        # Fetch new feed data
+        feed_data = []
+        feed = fetch_rss_feed(rss_url)
         if feed:
             for entry in feed.entries:
                 if entry.link not in existing_html:
@@ -53,14 +66,21 @@ def update_rss_feeds(config, template_file):
                         'summary': entry.summary
                     })
 
-    # Generate new HTML content and append it
-    new_html_content = generate_html(feed_data, template_file)
-    combined_html_content = existing_html + new_html_content
+        # Generate new HTML content and append it
+        new_html_content = generate_html(feed_data, template_file)
+        combined_html_content = existing_html + new_html_content
 
-    with open(HTML_FILE, 'w', encoding='utf-8') as file:
-        file.write(combined_html_content)
+        with open(rss_file_path, 'w', encoding='utf-8') as file:
+            file.write(combined_html_content)
 
-    print(Fore.GREEN + f"{datetime.now()} - HTML updated with latest RSS feeds." + Style.RESET_ALL)
+        homepage_content += f'<a href="{rss_filename}">{rss_title}</a><br>\n'
+
+    homepage_html = generate_homepage(homepage_content)
+
+    with open(HOMEPAGE_FILE, 'w', encoding='utf-8') as homepage_file:
+        homepage_file.write(homepage_html)
+
+    print(Fore.GREEN + f"{datetime.now()} - RSS feeds updated and homepage generated." + Style.RESET_ALL)
 
 def start_feed_updater(template_file):
     while True:
