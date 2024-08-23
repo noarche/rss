@@ -26,6 +26,10 @@
             "url": "http://www.autoblog.com/rss.xml"
         },
         {
+            "title": "Bloomberg Politics",
+            "url": "http://www.bloomberg.com/politics/feeds/site.xml"
+        },
+        {
             "title": "Car & Driver",
             "url": "https://www.caranddriver.com/rss/all.xml/"
         },
@@ -44,6 +48,10 @@
         {
             "title": "Coindesk",
             "url": "http://feeds.feedburner.com/CoinDesk"
+        },
+        {
+            "title": "Cointelegraph",
+            "url": "http://cointelegraph.com/rss"
         },
         {
             "title": "Financial Post",
@@ -86,6 +94,14 @@
             "url": "http://www.linuxsecurity.com/static-content/linuxsecurity_advisories.rss"
         },
         {
+            "title": "MapMania",
+            "url": "http://feeds.feedburner.com/GoogleMapsMania"
+        },
+        {
+            "title": "Marijuana Moment",
+            "url": "https://www.marijuanamoment.net/feed/"
+        },
+        {
             "title": "Market Watch Real-Time",
             "url": "https://feeds.content.dowjones.io/public/rss/mw_realtimeheadlines"
         },
@@ -106,6 +122,10 @@
             "url": "http://newsbtc.com/feed/"
         },
         {
+            "title": "NPR News",
+            "url": "http://www.npr.org/rss/rss.php?id=1001"
+        },
+        {
             "title": "Popular Mechanics",
             "url": "http://www.popularmechanics.com/rss/"
         },
@@ -124,6 +144,10 @@
         {
             "title": "The Hacker News",
             "url": "http://thehackernews.com/feeds/posts/default"
+        },
+        {
+            "title": "The Marijuana Times",
+            "url": "http://www.marijuanatimes.org/feed/"
         },
         {
             "title": "The Register",
