@@ -74,6 +74,10 @@
             "url": "https://www.huffpost.com/section/world-news/feed"
         },
         {
+            "title": "Justice.gov",
+            "url": "https://www.justice.gov/news/rss?type=press_release&m=1"
+        },
+        {
             "title": "LA Times World & Nation",
             "url": "https://www.latimes.com/world-nation/rss2.0.xml"
         },
@@ -156,6 +160,10 @@
         {
             "title": "Washington Post World News",
             "url": "http://feeds.washingtonpost.com/rss/world"
+        },
+        {
+            "title": "Wired",
+            "url": "https://www.wired.com/feed/rss"
         },
         {
             "title": "Yahoo Headlines",
