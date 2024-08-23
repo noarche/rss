@@ -83,9 +83,6 @@ def generate_homepage(homepage_content):
 def update_rss_feeds(config, template_file):
     homepage_content = ""
     max_entries = 1000  # Set the maximum number of entries allowed on each feed page
-    combined_feed_data = []
-    max_combined_entries = 100  # Set the maximum number of entries allowed on the combined page
-    max_entries_per_feed = 3  # Set the maximum number of entries per RSS feed for the combined page
 
     for rss_info in config.get('rss_links', []):
         rss_url = rss_info.get('url')
@@ -118,16 +115,6 @@ def update_rss_feeds(config, template_file):
             # Sort the feed data by published date in descending order (most recent first)
             feed_data.sort(key=lambda x: x['published'], reverse=True)
 
-            # Limit the number of entries per feed for the combined feed page
-            limited_feed_data = feed_data[:max_entries_per_feed]
-
-            # Add the limited entries to the combined feed data
-            for entry in limited_feed_data:
-                combined_feed_data.append({
-                    'html': generate_html([entry], template_file),
-                    'published': entry['published']
-                })
-
         # Generate new HTML content and prepend it to the existing content
         new_html_content = generate_html(feed_data, template_file)
         combined_html_content = new_html_content + existing_html
@@ -145,29 +132,12 @@ def update_rss_feeds(config, template_file):
 
         homepage_content += f'<a href="{rss_filename}">{rss_title}</a><br>\n'
 
-    # Sort the combined feed data by published date in descending order (most recent first)
-    combined_feed_data.sort(key=lambda x: x['published'], reverse=True)
-
-    # Limit the number of entries to the maximum allowed
-    combined_feed_data = combined_feed_data[:max_combined_entries]
-
-    # Combine the HTML for the entries
-    combined_html_content = '<hr>'.join([entry['html'] for entry in combined_feed_data])
-
-    combined_feed_filename = os.path.join(BASE_DIR, 'combined_feed.html')
-    with open(combined_feed_filename, 'w', encoding='utf-8') as file:
-        file.write(combined_html_content)
-
-    # Add the combined feed link at the top of the homepage content with green styling
-    homepage_content = f'<a href="combined_feed.html" style="color: green;">Combined Feed</a><br>\n' + homepage_content
-
-    # Generate homepage HTML
     homepage_html = generate_homepage(homepage_content)
 
     with open(INDEX_FILE, 'w', encoding='utf-8') as homepage_file:
         homepage_file.write(homepage_html)
 
-    print(Fore.GREEN + f"{datetime.now()} - RSS feeds updated, index.html generated, and combined_feed.html created." + Style.RESET_ALL)
+    print(Fore.GREEN + f"{datetime.now()} - RSS feeds updated and index.html generated." + Style.RESET_ALL)
 
 
 def start_feed_updater(template_file):
@@ -199,4 +169,3 @@ if __name__ == "__main__":
             time.sleep(3600)  # Restart script after sleeping for 1 hour
     except KeyboardInterrupt:
         print(Fore.YELLOW + "Script terminated by user." + Style.RESET_ALL)
-
