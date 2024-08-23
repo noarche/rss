@@ -50,6 +50,10 @@
             "url": "http://cointelegraph.com/rss"
         },
         {
+            "title": "DarkNetLive",
+            "url": "https://darknetlive.com/index.xml"
+        },
+        {
             "title": "Financial Post",
             "url": "http://business.financialpost.com/feed"
         },
@@ -60,10 +64,6 @@
         {
             "title": "Fox News",
             "url": "http://feeds.foxnews.com/foxnews/latest"
-        },
-        {
-            "title": "Github Blog",
-            "url": "https://github.com/blog/all.atom"
         },
         {
             "title": "Hacker News",
@@ -86,12 +86,8 @@
             "url": "https://lifehacker.com/rss"
         },
         {
-            "title": "Linux Security",
-            "url": "http://www.linuxsecurity.com/static-content/linuxsecurity_advisories.rss"
-        },
-        {
-            "title": "MapMania",
-            "url": "http://feeds.feedburner.com/GoogleMapsMania"
+            "title": "Local News",
+            "url": "https://news.google.com/rss/topics/CAAqHAgKIhZDQklTQ2pvSWJHOWpZV3hmZGpJb0FBUAE/sections/CAQiTkNCSVNORG9JYkc5allXeGZkakpDRUd4dlkyRnNYM1l5WDNObFkzUnBiMjV5Q2hJSUwyMHZNSEowTTJoNkNnb0lMMjB2TUhKME0yZ29BQSowCAAqLAgKIiZDQklTRmpvSWJHOWpZV3hmZGpKNkNnb0lMMjB2TUhKME0yZ29BQVABUAE?hl=en-US&gl=US&ceid=US%3Aen&oc=11"
         },
         {
             "title": "Marijuana Moment",
