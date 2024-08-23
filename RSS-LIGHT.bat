@@ -1,2 +1,2 @@
-python rss.py
+python rss.py --light
 pause
