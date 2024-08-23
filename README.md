@@ -29,6 +29,8 @@ Whether you're working late at night and need a dark, easy-on-the-eyes view, or 
 
 3    Added more RSS feeds.    
 
+4    Added entry cap default of 1000 items per page. Change line 85 to set the number if you want higher or lower.
+
 ## 🌐 Config Settings & DARK THEME
 
 
