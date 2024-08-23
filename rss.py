@@ -82,6 +82,7 @@ def generate_homepage(homepage_content):
 
 def update_rss_feeds(config, template_file):
     homepage_content = ""
+    max_entries = 1000  # Set the maximum number of entries allowed on each feed page
 
     for rss_info in config.get('rss_links', []):
         rss_url = rss_info.get('url')
@@ -118,6 +119,14 @@ def update_rss_feeds(config, template_file):
         new_html_content = generate_html(feed_data, template_file)
         combined_html_content = new_html_content + existing_html
 
+        # Split the combined content into individual entries
+        entries = combined_html_content.split('<hr>')  # Assuming each entry is separated by <hr> in the template
+        if len(entries) > max_entries:
+            entries = entries[:max_entries]  # Keep only the most recent entries
+
+        # Combine the entries back into HTML
+        combined_html_content = '<hr>'.join(entries)
+
         with open(rss_file_path, 'w', encoding='utf-8') as file:
             file.write(combined_html_content)
 
@@ -129,6 +138,7 @@ def update_rss_feeds(config, template_file):
         homepage_file.write(homepage_html)
 
     print(Fore.GREEN + f"{datetime.now()} - RSS feeds updated and index.html generated." + Style.RESET_ALL)
+
 
 def start_feed_updater(template_file):
     while True:
