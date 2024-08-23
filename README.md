@@ -31,6 +31,8 @@ Whether you're working late at night and need a dark, easy-on-the-eyes view, or 
 
 4    Added entry cap default of 1000 items per page. Change line 85 to set the number if you want higher or lower.
 
+5    Added 'combined feed page' that shows at the top of RSS feeds page. By default the contents are limited to the last 100 post mixed from all feeds with a maximum of 3 post per feed. The maximum is so a spammy feed wont take over this page & can be adjusted on line 87 of rss.py
+
 ## 🌐 Config Settings & DARK THEME
 
 
