@@ -138,27 +138,27 @@
             "url": "http://www.google.com/trends/hottrends/atom/feed?pn=p1"
         },
         {
-            "title": "US-NEWS ABC Headlines",
+            "title": "News ABC Headlines",
             "url": "http://feeds.abcnews.com/abcnews/usheadlines"
         },
         {
-            "title": "US-NEWS ABC News Top Stories",
+            "title": "News ABC News Top Stories",
             "url": "http://feeds.abcnews.com/abcnews/topstories"
         },
         {
-            "title": "US-NEWS CNBC News",
+            "title": "News CNBC News",
             "url": "https://www.cnbc.com/id/100003114/device/rss/rss.html"
         },
         {
-            "title": "US-NEWS Fox News",
+            "title": "News Fox News",
             "url": "http://feeds.foxnews.com/foxnews/latest"
         },
         {
-            "title": "US-NEWS NPR News",
+            "title": "News NPR News",
             "url": "http://www.npr.org/rss/rss.php?id=1001"
         },
         {
-            "title": "US-NEWS Yahoo Headlines",
+            "title": "News Yahoo Headlines",
             "url": "https://news.yahoo.com/rss/mostviewed"
         },
         {
