@@ -18,20 +18,12 @@
             "url": "http://www.autoblog.com/rss.xml"
         },
         {
-            "title": "Better Living Through Design",
-            "url": "http://www.betterlivingthroughdesign.com/feed/"
-        },
-        {
             "title": "Car & Driver",
             "url": "https://www.caranddriver.com/rss/all.xml/"
         },
         {
             "title": "Chemistry World",
             "url": "https://www.chemistryworld.com/413.rss"
-        },
-        {
-            "title": "Crime Computer Research",
-            "url": "https://feeds.feedburner.com/ComputerCrimeResearchNews"
         },
         {
             "title": "Crime Google",
@@ -70,32 +62,12 @@
             "url": "https://www.doityourself.com/feed"
         },
         {
-            "title": "Drudge Report",
-            "url": "http://www.drudgereportfeed.com/rss.xml"
-        },
-        {
-            "title": "Entrepeneur.com",
-            "url": "http://feeder.co/add-feed?url=feeds.feedburner.com/entrepreneur/latest"
-        },
-        {
             "title": "Fox News Science",
             "url": "http://feeds.foxnews.com/foxnews/scitech"
         },
         {
-            "title": "Game Informer",
-            "url": "http://www.gameinformer.com/p/rss.aspx"
-        },
-        {
-            "title": "Game VideoGamer",
-            "url": "http://feeds.videogamer.com/rss/allupdates.xml"
-        },
-        {
             "title": "GameSpot",
             "url": "https://www.gamespot.com/feeds/mashup/"
-        },
-        {
-            "title": "Interior Design Latest",
-            "url": "https://www.interiordesign.net/rss/"
         },
         {
             "title": "Justice.gov",
@@ -112,10 +84,6 @@
         {
             "title": "Marijuana Times",
             "url": "http://www.marijuanatimes.org/feed/"
-        },
-        {
-            "title": "Money Business Standard",
-            "url": "https://www.business-standard.com/rss/home_page_top_stories.rss"
         },
         {
             "title": "Money Economic Times",
@@ -190,10 +158,6 @@
             "url": "http://www.popularmechanics.com/rss/"
         },
         {
-            "title": "Reuters",
-            "url": "https://www.reutersagency.com/feed/?taxonomy=best-topics&post_type=best"
-        },
-        {
             "title": "Science Daily",
             "url": "https://www.sciencedaily.com/rss/all.xml"
         },
@@ -250,10 +214,6 @@
             "url": "http://feeds.mashable.com/Mashable"
         },
         {
-            "title": "Tech PCWorld",
-            "url": "http://feeds.pcworld.com/pcworld/latestnews"
-        },
-        {
             "title": "Tech Read Write",
             "url": "https://readwrite.com/feed/"
         },
@@ -300,10 +260,6 @@
         {
             "title": "Trending Google Search",
             "url": "http://www.google.com/trends/hottrends/atom/feed?pn=p1"
-        },
-        {
-            "title": "USA Today",
-            "url": "http://rssfeeds.usatoday.com/TP-OnPolitics"
         },
         {
             "title": "World News Al Jazeera",
