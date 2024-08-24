@@ -2,14 +2,6 @@
     "update_interval": 3600,
     "rss_links": [
         {
-            "title": "ABC News Top Stories",
-            "url": "http://feeds.abcnews.com/abcnews/topstories"
-        },
-        {
-            "title": "ABC News USA",
-            "url": "http://feeds.abcnews.com/abcnews/usheadlines"
-        },
-        {
             "title": "Astrophysics Nature.com",
             "url": "http://www.nature.com/subjects/astronomy-and-astrophysics.rss"
         },
@@ -30,22 +22,6 @@
             "url": "https://www.chemistryworld.com/413.rss"
         },
         {
-            "title": "CNBC News",
-            "url": "https://www.cnbc.com/id/100003114/device/rss/rss.html"
-        },
-        {
-            "title": "cNet",
-            "url": "http://news.cnet.com/2547-1_3-0-20.xml"
-        },
-        {
-            "title": "Coindesk",
-            "url": "http://feeds.feedburner.com/CoinDesk"
-        },
-        {
-            "title": "Cointelegraph",
-            "url": "http://cointelegraph.com/rss"
-        },
-        {
             "title": "Crime Computer Research",
             "url": "https://feeds.feedburner.com/ComputerCrimeResearchNews"
         },
@@ -62,24 +38,16 @@
             "url": "http://www.guardian.co.uk/uk/ukcrime/rss"
         },
         {
-            "title": "Financial Post",
-            "url": "http://business.financialpost.com/feed"
+            "title": "Crypto Coindesk",
+            "url": "http://feeds.feedburner.com/CoinDesk"
         },
         {
-            "title": "Financial Times",
-            "url": "https://www.ft.com/rss/home"
+            "title": "Crypto Cointelegraph",
+            "url": "http://cointelegraph.com/rss"
         },
         {
-            "title": "Fox News",
-            "url": "http://feeds.foxnews.com/foxnews/latest"
-        },
-        {
-            "title": "Hacker News",
-            "url": "https://hnrss.org/frontpage"
-        },
-        {
-            "title": "Hackernoon",
-            "url": "https://hackernoon.com/feed"
+            "title": "Crypto NewsBTC",
+            "url": "http://newsbtc.com/feed/"
         },
         {
             "title": "Justice.gov",
@@ -94,12 +62,28 @@
             "url": "https://www.marijuanamoment.net/feed/"
         },
         {
-            "title": "Market Watch Real-Time",
+            "title": "Marijuana Times",
+            "url": "http://www.marijuanatimes.org/feed/"
+        },
+        {
+            "title": "Money Financial Post",
+            "url": "http://business.financialpost.com/feed"
+        },
+        {
+            "title": "Money Financial Times",
+            "url": "https://www.ft.com/rss/home"
+        },
+        {
+            "title": "Money Market Watch Real-Time",
             "url": "https://feeds.content.dowjones.io/public/rss/mw_realtimeheadlines"
         },
         {
-            "title": "Market Watch Top Stories",
+            "title": "Money Market Watch Top Stories",
             "url": "https://feeds.content.dowjones.io/public/rss/mw_topstories"
+        },
+        {
+            "title": "Money Seeking Alpha",
+            "url": "http://seekingalpha.com/tag/market-outlook.xml"
         },
         {
             "title": "MSNBC",
@@ -110,40 +94,40 @@
             "url": "http://www.nasa.gov/rss/image_of_the_day.rss"
         },
         {
-            "title": "NewsBTC",
-            "url": "http://newsbtc.com/feed/"
-        },
-        {
-            "title": "NPR News",
-            "url": "http://www.npr.org/rss/rss.php?id=1001"
-        },
-        {
             "title": "Popular Mechanics",
             "url": "http://www.popularmechanics.com/rss/"
         },
         {
-            "title": "Security Week",
+            "title": "Tech cNet",
+            "url": "http://news.cnet.com/2547-1_3-0-20.xml"
+        },
+        {
+            "title": "Tech Hacker News",
+            "url": "https://hnrss.org/frontpage"
+        },
+        {
+            "title": "Tech Hackernoon",
+            "url": "https://hackernoon.com/feed"
+        },
+        {
+            "title": "Tech Security Week",
             "url": "https://www.securityweek.com/feed"
         },
         {
-            "title": "Seeking Alpha",
-            "url": "http://seekingalpha.com/tag/market-outlook.xml"
-        },
-        {
-            "title": "The Hacker News",
+            "title": "Tech The Hacker News",
             "url": "http://thehackernews.com/feeds/posts/default"
         },
         {
-            "title": "The Marijuana Times",
-            "url": "http://www.marijuanatimes.org/feed/"
-        },
-        {
-            "title": "The Register",
+            "title": "Tech The Register",
             "url": "http://www.theregister.co.uk/security/headlines.atom"
         },
         {
-            "title": "The Verge",
+            "title": "Tech The Verge",
             "url": "https://theverge.com/rss/index.xml"
+        },
+        {
+            "title": "Tech Wired",
+            "url": "https://www.wired.com/feed/rss"
         },
         {
             "title": "The Weather Channel",
@@ -154,8 +138,28 @@
             "url": "http://www.google.com/trends/hottrends/atom/feed?pn=p1"
         },
         {
-            "title": "Wired",
-            "url": "https://www.wired.com/feed/rss"
+            "title": "US-NEWS ABC Headlines",
+            "url": "http://feeds.abcnews.com/abcnews/usheadlines"
+        },
+        {
+            "title": "US-NEWS ABC News Top Stories",
+            "url": "http://feeds.abcnews.com/abcnews/topstories"
+        },
+        {
+            "title": "US-NEWS CNBC News",
+            "url": "https://www.cnbc.com/id/100003114/device/rss/rss.html"
+        },
+        {
+            "title": "US-NEWS Fox News",
+            "url": "http://feeds.foxnews.com/foxnews/latest"
+        },
+        {
+            "title": "US-NEWS NPR News",
+            "url": "http://www.npr.org/rss/rss.php?id=1001"
+        },
+        {
+            "title": "US-NEWS Yahoo Headlines",
+            "url": "https://news.yahoo.com/rss/mostviewed"
         },
         {
             "title": "World News Al Jazeera",
@@ -180,10 +184,6 @@
         {
             "title": "World News Washington Post",
             "url": "http://feeds.washingtonpost.com/rss/world"
-        },
-        {
-            "title": "Yahoo Headlines",
-            "url": "https://news.yahoo.com/rss/mostviewed"
         }
     ]
 }
