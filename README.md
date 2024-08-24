@@ -41,19 +41,22 @@ Whether you're working late at night and need a dark, easy-on-the-eyes view, or 
 
 ### ☀️ Light Theme 
 
-    python rss.py
-
-    OR
-
-    run the batch file `RSS-DARK.bat`
-
-### 🌑 Dark Theme
-
-    python rss.py --dark
+    python rss.py  --light
 
     OR
 
     run the batch file `RSS-LIGHT.bat`
+
+### 🌑 Dark Theme (default)
+
+
+        Since dark theme is the default theme the two commands below are give the same result.
+        python rss.py
+        python rss.py --dark
+
+    OR
+
+    run the batch file `RSS-DARK.bat`
 
 ### 🗞️ Adding RSS links 
 
