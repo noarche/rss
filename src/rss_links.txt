@@ -1,0 +1,16 @@
+Coindesk:http://feeds.feedburner.com/CoinDesk
+NewsBTC:http://newsbtc.com/feed/
+Autoblog:http://www.autoblog.com/rss.xml
+Car & Driver:https://www.caranddriver.com/rss/all.xml/
+Popular Mechanics:http://www.popularmechanics.com/rss/
+Chemistry World:https://www.chemistryworld.com/413.rss
+Nasa Img of the Day:http://www.nasa.gov/rss/image_of_the_day.rss
+Astrophysics Science Daily:http://www.sciencedaily.com/rss/space_time/astrophysics.xml
+Astrophysics Nature.com:http://www.nature.com/subjects/astronomy-and-astrophysics.rss
+Life Hacker:https://lifehacker.com/rss
+Cointelegraph:http://cointelegraph.com/rss
+Marijuana Moment:https://www.marijuanamoment.net/feed/
+The Marijuana Times:http://www.marijuanatimes.org/feed/
+NPR News:http://www.npr.org/rss/rss.php?id=1001
+Justice.gov:https://www.justice.gov/news/rss?type=press_release&m=1
+Wired:https://www.wired.com/feed/rss
