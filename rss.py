@@ -57,11 +57,13 @@ TZINFOS = {
     'NZDT': gettz('Pacific/Auckland'),
 }
 
-
 def load_config():
-    with open(CONFIG_FILE, 'r') as file:
-        config = json.load(file)
-    return config
+    try:
+        with open(CONFIG_FILE, 'r') as file:
+            return json.load(file)
+    except json.JSONDecodeError as e:
+        print(Fore.RED + f"Error parsing config.json: {e}" + Style.RESET_ALL)
+        return {}
 
 def fetch_rss_feed(url):
     try:
@@ -82,7 +84,7 @@ def generate_homepage(homepage_content):
 
 def update_rss_feeds(config, template_file):
     homepage_content = ""
-    max_entries = 1000  # Set the maximum number of entries allowed on each feed page
+    max_entries = 9000000  # Set the maximum number of entries allowed on each feed page
 
     for rss_info in config.get('rss_links', []):
         rss_url = rss_info.get('url')
@@ -103,8 +105,14 @@ def update_rss_feeds(config, template_file):
         if feed:
             for entry in feed.entries:
                 if entry.link not in existing_html:
-                    # Use dateutil.parser to parse the date with tzinfos
-                    published_date = date_parser.parse(entry.published, tzinfos=TZINFOS)
+                    published_date = None
+                    if 'published' in entry:
+                        published_date = date_parser.parse(entry.published, tzinfos=TZINFOS)
+                    elif 'updated' in entry:
+                        published_date = date_parser.parse(entry.updated, tzinfos=TZINFOS)
+                    else:
+                        published_date = datetime.now()
+
                     feed_data.append({
                         'title': entry.title,
                         'link': entry.link,
@@ -139,10 +147,13 @@ def update_rss_feeds(config, template_file):
 
     print(Fore.GREEN + f"{datetime.now()} - RSS feeds updated and index.html generated." + Style.RESET_ALL)
 
-
 def start_feed_updater(template_file):
     while True:
         config = load_config()
+        if not config:
+            print(Fore.RED + "Failed to load configuration. Exiting." + Style.RESET_ALL)
+            break
+        
         update_interval = config.get('update_interval', UPDATE_INTERVAL)
         update_rss_feeds(config, template_file)
         print(Fore.BLUE + f"Sleeping for {update_interval} seconds..." + Style.RESET_ALL)
@@ -164,8 +175,6 @@ if __name__ == "__main__":
         TEMPLATE_FILE = os.path.join(BASE_DIR, 'src', 'template_light.html')  # Default to light theme
 
     try:
-        while True:
-            start_feed_updater(TEMPLATE_FILE)
-            time.sleep(3600)  # Restart script after sleeping for 1 hour
+        start_feed_updater(TEMPLATE_FILE)
     except KeyboardInterrupt:
         print(Fore.YELLOW + "Script terminated by user." + Style.RESET_ALL)
