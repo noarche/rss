@@ -2,6 +2,10 @@
     "update_interval": 3600,
     "rss_links": [
         {
+            "title": "Archinect",
+            "url": "https://archinect.com/feed/1/news"
+        },
+        {
             "title": "Astrophysics Nature.com",
             "url": "http://www.nature.com/subjects/astronomy-and-astrophysics.rss"
         },
@@ -12,6 +16,10 @@
         {
             "title": "Autoblog",
             "url": "http://www.autoblog.com/rss.xml"
+        },
+        {
+            "title": "Better Living Through Design",
+            "url": "http://www.betterlivingthroughdesign.com/feed/"
         },
         {
             "title": "Car & Driver",
@@ -50,6 +58,46 @@
             "url": "http://newsbtc.com/feed/"
         },
         {
+            "title": "Daily Mail",
+            "url": "http://www.dailymail.co.uk/articles.rss"
+        },
+        {
+            "title": "Daily Signal",
+            "url": "http://dailysignal.com//feed/"
+        },
+        {
+            "title": "Do It Yourself",
+            "url": "https://www.doityourself.com/feed"
+        },
+        {
+            "title": "Drudge Report",
+            "url": "http://www.drudgereportfeed.com/rss.xml"
+        },
+        {
+            "title": "Entrepeneur.com",
+            "url": "http://feeder.co/add-feed?url=feeds.feedburner.com/entrepreneur/latest"
+        },
+        {
+            "title": "Fox News Science",
+            "url": "http://feeds.foxnews.com/foxnews/scitech"
+        },
+        {
+            "title": "Game Informer",
+            "url": "http://www.gameinformer.com/p/rss.aspx"
+        },
+        {
+            "title": "Game VideoGamer",
+            "url": "http://feeds.videogamer.com/rss/allupdates.xml"
+        },
+        {
+            "title": "GameSpot",
+            "url": "https://www.gamespot.com/feeds/mashup/"
+        },
+        {
+            "title": "Interior Design Latest",
+            "url": "https://www.interiordesign.net/rss/"
+        },
+        {
             "title": "Justice.gov",
             "url": "https://www.justice.gov/news/rss?type=press_release&m=1"
         },
@@ -66,12 +114,24 @@
             "url": "http://www.marijuanatimes.org/feed/"
         },
         {
+            "title": "Money Business Standard",
+            "url": "https://www.business-standard.com/rss/home_page_top_stories.rss"
+        },
+        {
+            "title": "Money Economic Times",
+            "url": "https://economictimes.indiatimes.com/rssfeedsdefault.cms"
+        },
+        {
             "title": "Money Financial Post",
             "url": "http://business.financialpost.com/feed"
         },
         {
             "title": "Money Financial Times",
             "url": "https://www.ft.com/rss/home"
+        },
+        {
+            "title": "Money Fortune",
+            "url": "https://fortune.com/feed"
         },
         {
             "title": "Money Market Watch Real-Time",
@@ -86,56 +146,20 @@
             "url": "http://seekingalpha.com/tag/market-outlook.xml"
         },
         {
+            "title": "Money Yahoo Finance",
+            "url": "https://finance.yahoo.com/news/rssindex"
+        },
+        {
             "title": "MSNBC",
             "url": "http://news.google.com/news?hl=en&gl=us&q=msnbc&um=1&ie=UTF-8&output=rss"
         },
         {
+            "title": "Music Billboard",
+            "url": "https://www.billboard.com/articles/rss.xml"
+        },
+        {
             "title": "Nasa Img of the Day",
             "url": "http://www.nasa.gov/rss/image_of_the_day.rss"
-        },
-        {
-            "title": "Popular Mechanics",
-            "url": "http://www.popularmechanics.com/rss/"
-        },
-        {
-            "title": "Tech cNet",
-            "url": "http://news.cnet.com/2547-1_3-0-20.xml"
-        },
-        {
-            "title": "Tech Hacker News",
-            "url": "https://hnrss.org/frontpage"
-        },
-        {
-            "title": "Tech Hackernoon",
-            "url": "https://hackernoon.com/feed"
-        },
-        {
-            "title": "Tech Security Week",
-            "url": "https://www.securityweek.com/feed"
-        },
-        {
-            "title": "Tech The Hacker News",
-            "url": "http://thehackernews.com/feeds/posts/default"
-        },
-        {
-            "title": "Tech The Register",
-            "url": "http://www.theregister.co.uk/security/headlines.atom"
-        },
-        {
-            "title": "Tech The Verge",
-            "url": "https://theverge.com/rss/index.xml"
-        },
-        {
-            "title": "Tech Wired",
-            "url": "https://www.wired.com/feed/rss"
-        },
-        {
-            "title": "The Weather Channel",
-            "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCGTUbwceCMibvpbd2NaIP7A"
-        },
-        {
-            "title": "Trending Google Search",
-            "url": "http://www.google.com/trends/hottrends/atom/feed?pn=p1"
         },
         {
             "title": "News ABC Headlines",
@@ -162,8 +186,132 @@
             "url": "https://news.yahoo.com/rss/mostviewed"
         },
         {
+            "title": "Popular Mechanics",
+            "url": "http://www.popularmechanics.com/rss/"
+        },
+        {
+            "title": "Reuters",
+            "url": "https://www.reutersagency.com/feed/?taxonomy=best-topics&post_type=best"
+        },
+        {
+            "title": "Science Daily",
+            "url": "https://www.sciencedaily.com/rss/all.xml"
+        },
+        {
+            "title": "Science Discovery",
+            "url": "https://podcasts.files.bbci.co.uk/p002w557.rss"
+        },
+        {
+            "title": "Science Gizmodo",
+            "url": "https://gizmodo.com/tag/science/rss"
+        },
+        {
+            "title": "Science Vs",
+            "url": "https://www.wired.com/feed/category/science/latest/rss"
+        },
+        {
+            "title": "Space",
+            "url": "https://www.space.com/feeds/all"
+        },
+        {
+            "title": "Space Nasa Breaking News",
+            "url": "https://www.nasa.gov/rss/dyn/breaking_news.rss"
+        },
+        {
+            "title": "Space Sky & Telescope",
+            "url": "https://www.skyandtelescope.com/feed/"
+        },
+        {
+            "title": "Space The Guardian",
+            "url": "https://www.theguardian.com/science/space/rss"
+        },
+        {
+            "title": "Tech cNet",
+            "url": "http://news.cnet.com/2547-1_3-0-20.xml"
+        },
+        {
+            "title": "Tech Hacker News",
+            "url": "https://hnrss.org/frontpage"
+        },
+        {
+            "title": "Tech Hackernoon",
+            "url": "https://hackernoon.com/feed"
+        },
+        {
+            "title": "Tech How-To Geek",
+            "url": "https://www.howtogeek.com/feed/"
+        },
+        {
+            "title": "Tech MakeUsOf",
+            "url": "http://feeds.feedburner.com/Makeuseof"
+        },
+        {
+            "title": "Tech Mashable",
+            "url": "http://feeds.mashable.com/Mashable"
+        },
+        {
+            "title": "Tech PCWorld",
+            "url": "http://feeds.pcworld.com/pcworld/latestnews"
+        },
+        {
+            "title": "Tech Read Write",
+            "url": "https://readwrite.com/feed/"
+        },
+        {
+            "title": "Tech Security Week",
+            "url": "https://www.securityweek.com/feed"
+        },
+        {
+            "title": "Tech TechCrunch",
+            "url": "http://feeds.feedburner.com/TechCrunch"
+        },
+        {
+            "title": "Tech Technology Review",
+            "url": "https://www.technologyreview.com/topnews.rss"
+        },
+        {
+            "title": "Tech The Hacker News",
+            "url": "http://thehackernews.com/feeds/posts/default"
+        },
+        {
+            "title": "Tech The Register",
+            "url": "http://www.theregister.co.uk/security/headlines.atom"
+        },
+        {
+            "title": "Tech The Verge",
+            "url": "https://theverge.com/rss/index.xml"
+        },
+        {
+            "title": "Tech Wired",
+            "url": "https://www.wired.com/feed/rss"
+        },
+        {
+            "title": "The Architects Newspaper",
+            "url": "https://archpaper.com/feed"
+        },
+        {
+            "title": "The Nation",
+            "url": "https://www.thenation.com/feed/?post_type=article"
+        },
+        {
+            "title": "The Weather Channel",
+            "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCGTUbwceCMibvpbd2NaIP7A"
+        },
+        {
+            "title": "Trending Google Search",
+            "url": "http://www.google.com/trends/hottrends/atom/feed?pn=p1"
+        },
+        {
+            "title": "USA Today",
+            "url": "http://rssfeeds.usatoday.com/TP-OnPolitics"
+        },
+        {
             "title": "World News Al Jazeera",
             "url": "http://news.google.com/news?hl=en&gl=us&q=aljazeera&um=1&ie=UTF-8&output=rss"
+        },
+        {
+            "title": "World News BBC",
+            "url": "http://feeds.bbci.co.uk/news/world/rss.xml"
         },
         {
             "title": "World News HuffPost Breaking",
