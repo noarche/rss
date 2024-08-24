@@ -50,6 +50,22 @@
             "url": "http://cointelegraph.com/rss"
         },
         {
+            "title": "Crime Computer Research",
+            "url": "https://feeds.feedburner.com/ComputerCrimeResearchNews"
+        },
+        {
+            "title": "Crime Google",
+            "url": "http://news.google.com/news?hl=en&gl=us&q=crime&um=1&ie=UTF-8&output=rss"
+        },
+        {
+            "title": "Crime L.A. Times",
+            "url": "https://www.latimes.com/california/rss2.0.xml"
+        },
+        {
+            "title": "Crime The Guardian",
+            "url": "http://www.guardian.co.uk/uk/ukcrime/rss"
+        },
+        {
             "title": "Financial Post",
             "url": "http://business.financialpost.com/feed"
         },
