@@ -10,10 +10,6 @@
             "url": "http://feeds.abcnews.com/abcnews/usheadlines"
         },
         {
-            "title": "Al Jazeera English",
-            "url": "http://news.google.com/news?hl=en&gl=us&q=aljazeera&um=1&ie=UTF-8&output=rss"
-        },
-        {
             "title": "Astrophysics Nature.com",
             "url": "http://www.nature.com/subjects/astronomy-and-astrophysics.rss"
         },
@@ -86,16 +82,8 @@
             "url": "https://hackernoon.com/feed"
         },
         {
-            "title": "HuffPost Breaking World News",
-            "url": "https://www.huffpost.com/section/world-news/feed"
-        },
-        {
             "title": "Justice.gov",
             "url": "https://www.justice.gov/news/rss?type=press_release&m=1"
-        },
-        {
-            "title": "LA Times World & Nation",
-            "url": "https://www.latimes.com/world-nation/rss2.0.xml"
         },
         {
             "title": "Life Hacker",
@@ -142,10 +130,6 @@
             "url": "http://seekingalpha.com/tag/market-outlook.xml"
         },
         {
-            "title": "The Guardian World News",
-            "url": "http://feeds.guardian.co.uk/theguardian/world/rss"
-        },
-        {
             "title": "The Hacker News",
             "url": "http://thehackernews.com/feeds/posts/default"
         },
@@ -170,16 +154,32 @@
             "url": "http://www.google.com/trends/hottrends/atom/feed?pn=p1"
         },
         {
-            "title": "WallSt Journal World News",
+            "title": "Wired",
+            "url": "https://www.wired.com/feed/rss"
+        },
+        {
+            "title": "World News Al Jazeera",
+            "url": "http://news.google.com/news?hl=en&gl=us&q=aljazeera&um=1&ie=UTF-8&output=rss"
+        },
+        {
+            "title": "World News HuffPost Breaking",
+            "url": "https://www.huffpost.com/section/world-news/feed"
+        },
+        {
+            "title": "World News L.A. Times",
+            "url": "https://www.latimes.com/world-nation/rss2.0.xml"
+        },
+        {
+            "title": "World News The Guardian",
+            "url": "http://feeds.guardian.co.uk/theguardian/world/rss"
+        },
+        {
+            "title": "World News WallSt Journal",
             "url": "https://feeds.a.dj.com/rss/RSSWorldNews.xml"
         },
         {
-            "title": "Washington Post World News",
+            "title": "World News Washington Post",
             "url": "http://feeds.washingtonpost.com/rss/world"
-        },
-        {
-            "title": "Wired",
-            "url": "https://www.wired.com/feed/rss"
         },
         {
             "title": "Yahoo Headlines",
