@@ -60,7 +60,7 @@ Whether you're working late at night and need a dark, easy-on-the-eyes view, or 
 
 ### 🗞️ Adding RSS links 
 
- Set the time between updates and enter your RSS feed links in `/src/config.json`. Be sure to follow the current format with a comma after every link but NOT the last link.
+ Set the time between updates and enter your RSS feed links in `/src/config.json`. Be sure to follow the current format with a comma after every link but NOT the last link.  You will also find a script called Config Builder in /src/ that has instructions on how to use to quickly create a compatible config. 
 
 
 
