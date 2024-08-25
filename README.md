@@ -53,8 +53,8 @@ Below:Screenshot with latest config as of 8/24/2024
 ### 🌑 Dark Theme (default)
 
 
-        Since dark theme is the default theme the two commands below are give the same result.
-        python rss.py
+        
+        
         python rss.py --dark
 
     OR
