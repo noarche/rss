@@ -292,10 +292,6 @@
         {
             "title": "World News WallSt Journal",
             "url": "https://feeds.a.dj.com/rss/RSSWorldNews.xml"
-        },
-        {
-            "title": "World News Washington Post",
-            "url": "http://feeds.washingtonpost.com/rss/world"
         }
     ]
 }
