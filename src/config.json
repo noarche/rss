@@ -62,7 +62,7 @@
             "url": "https://www.doityourself.com/feed"
         },
         {
-            "title": "Fox News Science",
+            "title": "Fox News Sci-Tech",
             "url": "http://feeds.foxnews.com/foxnews/scitech"
         },
         {
@@ -228,6 +228,10 @@
         {
             "title": "Tech Packet Storm",
             "url": "https://rss.packetstormsecurity.com/news/"
+        },
+        {
+            "title": "Tech PC Mag Latest News",
+            "url": "https://www.pcmag.com/feeds/rss/latest"
         },
         {
             "title": "Tech Read Write",
