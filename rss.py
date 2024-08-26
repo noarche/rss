@@ -6,6 +6,7 @@ import threading
 import argparse
 from jinja2 import Environment, FileSystemLoader
 from datetime import datetime
+from datetime import timezone
 from colorama import Fore, Style
 from dateutil import parser as date_parser
 from dateutil.tz import gettz
@@ -112,6 +113,10 @@ def update_rss_feeds(config, template_file):
                         published_date = date_parser.parse(entry.updated, tzinfos=TZINFOS)
                     else:
                         published_date = datetime.now()
+
+                    # Make sure the published_date is timezone-aware
+                    if published_date.tzinfo is None:
+                        published_date = published_date.replace(tzinfo=timezone.utc)
 
                     feed_data.append({
                         'title': entry.title,
