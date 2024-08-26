@@ -142,6 +142,10 @@
             "url": "https://www.cnbc.com/id/100003114/device/rss/rss.html"
         },
         {
+            "title": "News CNN Most Recent",
+            "url": "http://rss.cnn.com/rss/cnn_latest.rss"
+        },
+        {
             "title": "News CNN Top Stories",
             "url": "http://rss.cnn.com/rss/cnn_topstories.rss"
         },
@@ -296,10 +300,6 @@
         {
             "title": "World News WallSt Journal",
             "url": "https://feeds.a.dj.com/rss/RSSWorldNews.xml"
-        },
-        {
-            "title": "World News Washington Post",
-            "url": "http://feeds.washingtonpost.com/rss/world"
         }
     ]
 }
