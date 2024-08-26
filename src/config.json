@@ -146,6 +146,10 @@
             "url": "http://feeds.foxnews.com/foxnews/latest"
         },
         {
+            "title": "News Raw Story",
+            "url": "http://www.rawstory.com/rs/feed/"
+        },
+        {
             "title": "News NPR News",
             "url": "http://www.npr.org/rss/rss.php?id=1001"
         },
@@ -212,6 +216,10 @@
         {
             "title": "Tech Mashable",
             "url": "http://feeds.mashable.com/Mashable"
+        },
+        {
+            "title": "Tech Packet Storm",
+            "url": "https://rss.packetstormsecurity.com/news/"
         },
         {
             "title": "Tech Read Write",
