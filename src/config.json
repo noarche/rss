@@ -142,16 +142,20 @@
             "url": "https://www.cnbc.com/id/100003114/device/rss/rss.html"
         },
         {
+            "title": "News CNN Top Stories",
+            "url": "http://rss.cnn.com/rss/cnn_topstories.rss"
+        },
+        {
             "title": "News Fox News",
             "url": "http://feeds.foxnews.com/foxnews/latest"
         },
         {
-            "title": "News Raw Story",
-            "url": "http://www.rawstory.com/rs/feed/"
-        },
-        {
             "title": "News NPR News",
             "url": "http://www.npr.org/rss/rss.php?id=1001"
+        },
+        {
+            "title": "News Raw Story",
+            "url": "http://www.rawstory.com/rs/feed/"
         },
         {
             "title": "News Yahoo Headlines",
@@ -292,6 +296,10 @@
         {
             "title": "World News WallSt Journal",
             "url": "https://feeds.a.dj.com/rss/RSSWorldNews.xml"
+        },
+        {
+            "title": "World News Washington Post",
+            "url": "http://feeds.washingtonpost.com/rss/world"
         }
     ]
 }
