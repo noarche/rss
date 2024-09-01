@@ -10,21 +10,44 @@
             background-color: #121212;
             color: #47fc92;
             font-family: Tahoma, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            color: #47fc92;
+            margin-bottom: 20px;
+        }
+        .container {
+            text-align: center;
         }
         a {
-            color: #60c0fffd;
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            color: #47fc92;
+            background-color: #1e1e1e;
+            border: 2px solid #47fc92;
+            border-radius: 5px;
             text-decoration: none;
             font-size: 1.2em;
+            transition: background-color 0.3s, border-color 0.3s;
         }
         a:hover {
-            text-decoration: underline;
+            background-color: #47fc92;
+            color: #121212;
+            border-color: #47fc92;
         }
     </style>
 </head>
 <body>
-    <h1>RSS Feeds</h1>
-    <div>
-        {{ homepage_content | safe }}
+    <div class="container">
+        <h1>RSS Feeds</h1>
+        <div>
+            {{ homepage_content | safe }}
+        </div>
     </div>
 </body>
 </html>
