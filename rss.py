@@ -149,8 +149,8 @@ def update_rss_feeds(config, template_file):
 
         homepage_content += f'<a href="{rss_filename}">{rss_title}</a><br>\n'
 
-        # Add a 10-second delay between each feed link update
-        time.sleep(10)
+        # Add a 2-second delay between each feed link update - Helps when scraping same host like reddit.
+        time.sleep(2)
 
     homepage_html = generate_homepage(homepage_content)
 
