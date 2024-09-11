@@ -181,7 +181,7 @@ if __name__ == "__main__":
     elif args.dark:
         TEMPLATE_FILE = os.path.join(BASE_DIR, 'src', 'template_dark.html')
     else:
-        TEMPLATE_FILE = os.path.join(BASE_DIR, 'src', 'template_dark.html')  # Default to light theme
+        TEMPLATE_FILE = os.path.join(BASE_DIR, 'src', 'template_dark.html')  # Default to dark theme
 
     try:
         start_feed_updater(TEMPLATE_FILE)
