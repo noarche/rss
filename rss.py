@@ -149,12 +149,16 @@ def update_rss_feeds(config, template_file):
 
         homepage_content += f'<a href="{rss_filename}">{rss_title}</a><br>\n'
 
+        # Add a 10-second delay between each feed link update
+        time.sleep(10)
+
     homepage_html = generate_homepage(homepage_content)
 
     with open(INDEX_FILE, 'w', encoding='utf-8') as homepage_file:
         homepage_file.write(homepage_html)
 
     print(Fore.GREEN + f"{datetime.now()} - RSS feeds updated and index.html generated." + Style.RESET_ALL)
+
 
 def start_feed_updater(template_file):
     while True:
@@ -187,4 +191,5 @@ if __name__ == "__main__":
         start_feed_updater(TEMPLATE_FILE)
     except KeyboardInterrupt:
         print(Fore.YELLOW + "Script terminated by user." + Style.RESET_ALL)
+
 
