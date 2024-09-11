@@ -13,10 +13,14 @@ from dateutil.tz import gettz
 
 # Paths
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+PAGES_DIR = os.path.join(BASE_DIR, 'pages')
 CONFIG_FILE = os.path.join(BASE_DIR, 'src', 'config.json')
-INDEX_FILE = os.path.join(BASE_DIR, 'index.html')
+INDEX_FILE = os.path.join(PAGES_DIR, 'index.html')
 HOMEPAGE_TEMPLATE = os.path.join(BASE_DIR, 'src', 'template_homepage_dark.html')  # Dark theme by default
 UPDATE_INTERVAL = 3600  # Default to 1 hour if not specified in config
+
+if not os.path.exists(PAGES_DIR):
+    os.makedirs(PAGES_DIR)
 
 TZINFOS = {
     'GMT': gettz('GMT'),
@@ -91,7 +95,7 @@ def update_rss_feeds(config, template_file):
         rss_url = rss_info.get('url')
         rss_title = rss_info.get('title', rss_url)
         rss_filename = rss_title.replace(" ", "_").lower() + '.html'
-        rss_file_path = os.path.join(BASE_DIR, rss_filename)
+        rss_file_path = os.path.join(PAGES_DIR, rss_filename)
 
         # Load existing content if it exists
         if os.path.exists(rss_file_path):
@@ -177,9 +181,10 @@ if __name__ == "__main__":
     elif args.dark:
         TEMPLATE_FILE = os.path.join(BASE_DIR, 'src', 'template_dark.html')
     else:
-        TEMPLATE_FILE = os.path.join(BASE_DIR, 'src', 'template_light.html')  # Default to light theme
+        TEMPLATE_FILE = os.path.join(BASE_DIR, 'src', 'template_dark.html')  # Default to light theme
 
     try:
         start_feed_updater(TEMPLATE_FILE)
     except KeyboardInterrupt:
         print(Fore.YELLOW + "Script terminated by user." + Style.RESET_ALL)
+
