@@ -23,9 +23,7 @@ Below:Screenshot with latest config as of 8/24/2024
 ![RSS-Feeds-Default-Config-view](https://github.com/user-attachments/assets/597e131d-dc0c-445e-9f3f-b3b53b01c231)
 
 
-# Visit Demo
 
-View the demo if you have TOR browser @  `cw3k7xzcslhed6m6mokeybqtydjgyobsjspl55djwvw3fczbgdy5a7ad.onion` 
 
 # Updates
 
