@@ -282,6 +282,26 @@
             "url": "http://www.google.com/trends/hottrends/atom/feed?pn=p1"
         },
         {
+            "title": "Vice Cyber",
+            "url": "https://www.vice.com/en/tag/cyber/feed/"
+        },
+        {
+            "title": "Vice Drugs",
+            "url": "https://www.vice.com/en/tag/drugs/feed/"
+        },
+        {
+            "title": "Vice Hacking",
+            "url": "https://www.vice.com/en/tag/hacking/feed/"
+        },
+        {
+            "title": "Vice Internet",
+            "url": "https://www.vice.com/en/tag/internet/feed/"
+        },
+        {
+            "title": "Vice Science",
+            "url": "https://www.vice.com/en/tag/tech-science/feed/"
+        },
+        {
             "title": "World News Al Jazeera",
             "url": "http://news.google.com/news?hl=en&gl=us&q=aljazeera&um=1&ie=UTF-8&output=rss"
         },
