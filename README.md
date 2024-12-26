@@ -43,6 +43,14 @@ Below:Screenshot with latest config as of 8/24/2024
 
 ## 🌐 Config Settings & DARK THEME
 
+### ☀️ Using Proxy
+
+    python rss.py -tor
+    
+    python rss.py -i2p
+    
+    python rss.py -proxy IP:PORT
+
 
 ### ☀️ Light Theme 
 
