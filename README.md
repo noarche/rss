@@ -25,22 +25,6 @@ Below:Screenshot with latest config as of 8/24/2024
 
 
 
-# Updates
-
-    Added index.html to pages generated first time running script. 
-    Bookmark/send to desktop shortcut this link. It is the index to all 
-    of your feeds. Feeds now have their own pages.
-
-    Changed the way feeds are sorted. Now the most recent post is at the 
-    top of the page. 
-
-    Added more RSS feeds.    
-
-    Added entry cap default of 1000 items per page. Change line 85 to 
-    set the number if you want higher or lower.
-
-
-
 ## 🌐 Config Settings & DARK THEME
 
 ### ☀️ Using Proxy
