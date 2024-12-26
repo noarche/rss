@@ -16,32 +16,21 @@ import requests
 # Paths
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 PAGES_DIR = os.path.join(BASE_DIR, 'pages')
-CONFIG_FILE = os.path.join(BASE_DIR, 'src', 'config.json')
+SRC_DIR = os.path.join(BASE_DIR, 'src')
+DEFAULT_CONFIG_FILE = os.path.join(SRC_DIR, 'config.json')
 INDEX_FILE = os.path.join(PAGES_DIR, 'index.html')
-HOMEPAGE_TEMPLATE = os.path.join(BASE_DIR, 'src', 'template_homepage_dark.html')
+HOMEPAGE_TEMPLATE = os.path.join(SRC_DIR, 'template_homepage_dark.html')
 UPDATE_INTERVAL = 3600
 
 if not os.path.exists(PAGES_DIR):
     os.makedirs(PAGES_DIR)
 
-USER_AGENTS = [
-    "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.3",
-    "Mozilla/5.0 (iPhone; CPU iPhone OS 17_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Mobile/15E148 Safari/604.",
-    "Mozilla/5.0 (iPhone; CPU iPhone OS 17_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/131.0.6778.134 Mobile/15E148 Safari/604.1",
-    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
-    "Mozilla/5.0 (iPad; CPU OS 14_7_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/133.0 Mobile/15E148 Safari/605.1.15",
-    "Mozilla/5.0 (Linux; Android 10; SM-G973F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.6778.135 Mobile Safari/537.36 EdgA/131.0.2903.87",
-    "Mozilla/5.0 (Linux; Android 10; Pixel 3 XL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.6778.135 Mobile Safari/537.36 EdgA/131.0.2903.87",
-    "Mozilla/5.0 (Linux; Android 10; HD1913) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.6778.135 Mobile Safari/537.36 EdgA/131.0.2903.87",
-    "Mozilla/5.0 (Windows Mobile 10; Android 10.0; Microsoft; Lumia 950XL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36 Edge/40.15254.603",
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7_2) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4.1 Safari/605.1.15",
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.2903.86",
-    "Mozilla/5.0 (iPad; CPU OS 17_7_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4.1 Mobile/15E148 Safari/604.1",
-    "Mozilla/5.0 (iPhone; CPU iPhone OS 17_7_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 EdgiOS/131.2903.92 Mobile/15E148 Safari/605.1.15",
-    "Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/133.0 Mobile/15E148 Safari/605.1.15",
-    "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/27.0 Chrome/125.0.0.0 Mobile Safari/537.3",
-    "Mozilla/5.0 (iPhone; CPU iPhone OS 18_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/346.1.704810410 Mobile/15E148 Safari/604."
-]
+# Import USER_AGENTS from user_agents.py
+try:
+    from user_agents import USER_AGENTS
+except ImportError:
+    print(Fore.RED + "Error: Could not find user_agents.py or USER_AGENTS list." + Style.RESET_ALL)
+    USER_AGENTS = []
 
 proxies = None
 
@@ -51,12 +40,12 @@ try:
 except ImportError:
     TZINFOS = {}
 
-def load_config():
+def load_config(config_file):
     try:
-        with open(CONFIG_FILE, 'r') as file:
+        with open(config_file, 'r') as file:
             return json.load(file)
     except json.JSONDecodeError as e:
-        print(Fore.RED + f"Error parsing config.json: {e}" + Style.RESET_ALL)
+        print(Fore.RED + f"Error parsing {config_file}: {e}" + Style.RESET_ALL)
         return {}
 
 def fetch_rss_feed(url):
@@ -81,7 +70,7 @@ def generate_homepage(homepage_content):
 
 def update_rss_feeds(config, template_file, per_feed_sleep):
     homepage_content = ""
-    max_entries = 9000000
+    max_entries = 80085691337
 
     rss_links = config.get('rss_links', [])
     with tqdm(total=len(rss_links), desc="Updating RSS Feeds", unit="page") as progress:
@@ -146,9 +135,9 @@ def update_rss_feeds(config, template_file, per_feed_sleep):
 
     print(Fore.GREEN + f"{datetime.now()} - RSS feeds updated and index.html generated." + Style.RESET_ALL)
 
-def start_feed_updater(template_file):
+def start_feed_updater(template_file, config_file):
     while True:
-        config = load_config()
+        config = load_config(config_file)
         if not config:
             print(Fore.RED + "Failed to load configuration. Exiting." + Style.RESET_ALL)
             break
@@ -165,15 +154,16 @@ if __name__ == "__main__":
     parser.add_argument("-tor", action="store_true", help="Use Tor proxy")
     parser.add_argument("-i2p", action="store_true", help="Use I2P proxy")
     parser.add_argument("-proxy", type=str, help="Use custom proxy in IP:PORT format")
+    parser.add_argument("-config", type=str, help="Path to the configuration file", default=DEFAULT_CONFIG_FILE)
 
     args = parser.parse_args()
 
     if args.light:
-        TEMPLATE_FILE = os.path.join(BASE_DIR, 'src', 'template_light.html')
+        TEMPLATE_FILE = os.path.join(SRC_DIR, 'template_light.html')
     elif args.dark:
-        TEMPLATE_FILE = os.path.join(BASE_DIR, 'src', 'template_dark.html')
+        TEMPLATE_FILE = os.path.join(SRC_DIR, 'template_dark.html')
     else:
-        TEMPLATE_FILE = os.path.join(BASE_DIR, 'src', 'template_dark.html')
+        TEMPLATE_FILE = os.path.join(SRC_DIR, 'template_dark.html')
 
     if args.tor:
         proxies = {"http": "socks5h://127.0.0.1:9150", "https": "socks5h://127.0.0.1:9150"}
@@ -183,6 +173,6 @@ if __name__ == "__main__":
         proxies = {"http": f"http://{args.proxy}", "https": f"http://{args.proxy}"}
 
     try:
-        start_feed_updater(TEMPLATE_FILE)
+        start_feed_updater(TEMPLATE_FILE, args.config)
     except KeyboardInterrupt:
         print(Fore.YELLOW + "Script terminated by user." + Style.RESET_ALL)
