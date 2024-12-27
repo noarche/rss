@@ -12,6 +12,7 @@ from colorama import Fore, Style
 from dateutil import parser as date_parser
 from tqdm import tqdm
 import requests
+from http.server import SimpleHTTPRequestHandler, HTTPServer
 
 # Paths
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -20,7 +21,7 @@ SRC_DIR = os.path.join(BASE_DIR, 'src')
 DEFAULT_CONFIG_FILE = os.path.join(SRC_DIR, 'config.json')
 INDEX_FILE = os.path.join(PAGES_DIR, 'index.html')
 HOMEPAGE_TEMPLATE = os.path.join(SRC_DIR, 'template_homepage_dark.html')
-UPDATE_INTERVAL = 3600
+UPDATE_INTERVAL = 43200 # 28800 is 8hr and 43200 is 12hr and 86400 is 24hr
 
 if not os.path.exists(PAGES_DIR):
     os.makedirs(PAGES_DIR)
@@ -142,10 +143,17 @@ def start_feed_updater(template_file, config_file):
             print(Fore.RED + "Failed to load configuration. Exiting." + Style.RESET_ALL)
             break
 
-        per_feed_sleep = config.get('per_feed_sleep', 12)
+        per_feed_sleep = config.get('per_feed_sleep', 32.1)
         update_rss_feeds(config, template_file, per_feed_sleep)
         print(Fore.BLUE + f"Sleeping for {UPDATE_INTERVAL} seconds..." + Style.RESET_ALL)
         time.sleep(UPDATE_INTERVAL)
+
+def start_http_server(port):
+    os.chdir(PAGES_DIR)
+    handler = SimpleHTTPRequestHandler
+    httpd = HTTPServer(("", port), handler)
+    print(Fore.GREEN + f"HTTP server started on port {port}." + Style.RESET_ALL)
+    httpd.serve_forever()
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="RSS Feed HTML Generator")
@@ -155,6 +163,7 @@ if __name__ == "__main__":
     parser.add_argument("-i2p", action="store_true", help="Use I2P proxy")
     parser.add_argument("-proxy", type=str, help="Use custom proxy in IP:PORT format")
     parser.add_argument("-config", type=str, help="Path to the configuration file", default=DEFAULT_CONFIG_FILE)
+    parser.add_argument("-port", type=int, help="Port to run the HTTP server on")
 
     args = parser.parse_args()
 
@@ -171,6 +180,9 @@ if __name__ == "__main__":
         proxies = {"http": "http://127.0.0.1:4444", "https": "http://127.0.0.1:4444"}
     elif args.proxy:
         proxies = {"http": f"http://{args.proxy}", "https": f"http://{args.proxy}"}
+
+    if args.port:
+        threading.Thread(target=start_http_server, args=(args.port,), daemon=True).start()
 
     try:
         start_feed_updater(TEMPLATE_FILE, args.config)
