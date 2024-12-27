@@ -35,6 +35,11 @@ Below:Screenshot with latest config as of 8/24/2024
     
     python rss.py -proxy IP:PORT
 
+### ☀️ Using Built in HTTP Web Server
+
+    python rss.py -port 15432
+
+    This will launch built in webhost and the site will be accessible at http://localhost:15432 once the script has finished and created index.html. Removing the need for any additional software like jetty/apache. 
 
 ### ☀️ Light Theme 
 
